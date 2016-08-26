@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Star_generator</h2>
+<script>
+function make_stars(n){
+var x = '' ;
+var spaces = "";
+for (var j = n-1 ; j>0 ; j--){
+spaces += " " ;
+}
+var temp = []
+for (var i=0;i<n;i++){
+x += "*";
+finalString = spaces + x + x;
+console.log(finalString)
+spaces = spaces.substring(0,spaces.length-1);
+temp.push(finalString);
+}
+for(i=temp.length-2;i>=0;i--){
+console.log(temp[i])
+}
+}
+
+</script>
+
+</body>
+</html>
