@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>set_of_primes</h2>
+<script>
+var check_prime = function (n){
+for (i=2;i<n;i++){
+if(n%i == 0){
+return false
+}
+}
+return true;
+}
+
+function set_of_primes(count){
+var arr_prime = []
+for (j=2;arr_prime.length < count+1;j++){
+if(check_prime(j))
+arr_prime.push(j)
+}
+return arr_prime.reverse();
+}
+set_of_primes(4)
+</script>
+
+</body>
+</html>
